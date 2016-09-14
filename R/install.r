@@ -177,7 +177,7 @@ install_deps <- function(pkg = ".", dependencies = NA,
 
   pkg <- dev_package_deps(pkg, repos = repos, dependencies = dependencies,
     type = type)
-  update(pkg, ..., Ncpus = threads, quiet = quiet, upgrade = upgrade)
+  update(pkg, ..., Ncpus = threads, quiet = quiet, repos = repos, upgrade = upgrade)
   invisible()
 }
 
